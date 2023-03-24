@@ -1,0 +1,231 @@
+<!DocType html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="Text">
+		<meta name="keywords" content="HTML,CSS">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Methods</title>
+		<link href="css/style.css" rel="stylesheet">		
+	
+	</head>
+	
+	<body>
+		<section>
+			<div>
+				<table>
+					<caption></caption>
+					<tr>
+						<th>S.no</th>
+						<th>Methods</th>
+						<th>Syntex</th>
+						<th>Parameter</th>
+						<th>Input</th>
+						<th>Program</th>
+						<th>Output</th>
+						<th>Discription</th>
+					</tr>
+					<tr>
+						<th>01</th>
+						<th>filter</th>
+						<td>array.filter(callback(element))</td>
+						<td>val</td>
+						<td>var a=[1,"two",3,4,"five"];</td>
+						<td>var	b=a.filter(function(val){
+							if(typeof val=="string"){
+							return val;
+							}
+							})
+							console.log(b);</td>
+						<td>["two","five"]</td>
+						<td>It used to filter the values by given condition.</td>
+					</tr>
+					
+					<tr>
+						<th>02</th>
+						<th>find</th>
+						<td>array.find(callback(element,index,array))</td>
+						<td>val</td>
+						<td>var a=[1,"two",3,4,"five"];</td>
+						<td>var	b=a.find(function(val){
+							if(typeof val=="string"){
+							return val;
+							}
+							})
+							console.log(b);</td>
+						<td>"two"</td>
+						<td>It used to find the first value came from given condition.</td>
+					</tr>
+					
+					<tr>
+						<th>03</th>
+						<th>findIndex</th>
+						<td>array.findIndex(callback(element,index,array))</td>
+						<td>val</td>
+						<td>var a=[1,"two",3,4,"five"];</td>
+						<td>var	b=a.findIndex(function(val){
+							if(typeof val=="string"){
+							return val;
+							}
+							})
+							console.log(b);</td>
+						<td>1</td>
+						<td>It used to find the index of first value came from given condition.</td>
+					</tr>
+					
+					<tr>
+						<th>04</th>
+						<th>findLast</th>
+						<td>array.findLast(callback(element,index,array))</td>
+						<td>val</td>
+						<td>var a=[1,"two",3,4,"five"];</td>
+						<td>var	b=a.findLast(function(val){
+							if(typeof val=="string"){
+							return val;
+							}
+							})
+							console.log(b);</td>
+						<td>"five"</td>
+						<td>It used to find the last value came from given condition.</td>
+					</tr>
+					
+					<tr>
+						<th>05</th>
+						<th>findLastIndex</th>
+						<td>array.findLastIndex(callback(element,index,array))</td>
+						<td>val</td>
+						<td>var a=[1,"two",3,4,"five"];</td>
+						<td>var	b=a.findLastIndex(function(val){
+							if(typeof val=="string"){
+							return val;
+							}
+							})
+							console.log(b);</td>
+						<td>4</td>
+						<td>It used to find the index of last value came from given condition.</td>
+					</tr>
+					
+					<tr>
+						<th>06</th>
+						<th>map</th>
+						<td>array.map(callback(element,index,array))</td>
+						<td>val</td>
+						<td>var a=[1,"two",3,4,"five"];</td>
+						<td>a.map(function(val){
+							console.log(val);
+							})</td>
+						<td>1<br> "two" <br>3<br> 4 <br>"five"</td>
+						<td>It used to iterative the array</td>
+					</tr>
+					
+					<tr>
+						<th>07</th>
+						<th>pop</th>
+						<td>array.pop()</td>
+						<td>nil</td>
+						<td>var a=[1,"two",3,4,"five"];</td>
+						<td>console.log(a.pop())</td>
+						<td>[1,"two",3,4]</td>
+						<td>It remove the value from end of the array</ </td>
+					</tr>
+					
+					<tr>
+						<th>08</th>
+						<th>push</th>
+						<td>array.push(element)</td>
+						<td>7</td>
+						<td>var a=[1,"two",3,4];</td>
+						<td>console.log(a.push("six"))</td>
+						<td>[1,2,3,4,"six"]</td>
+						<td>It add the value to end of the array</td>
+					</tr>
+					
+					<tr>
+						<th>09</th>
+						<th>reduce</th>
+						<td>array.reduce(callback(accumulator,currentValue,index),initialValue)</td>
+						<td>x,y</td>
+						<td>var a=[1,"two",3,4,"six"];</td>
+						<td>var	b=a.reduce(function(x,y){
+							return x+y;
+							})
+							console.log(b);</td>
+						<td>"1two34six"</td>
+						<td>It used to reduce the array by given condition.</td>
+					</tr>
+					
+					<tr>
+						<th>10</th>
+						<th>reverse</th>
+						<td>array.reverse()</td>
+						<td>nil</td>
+						<td>var a=[1,"two",3,4,"six"];</td>
+						<td>console.log(a.reverse());</td>
+						<td>["six",4,3,"two",1]</td>
+						<td>It reverse the values in array</td>
+					</tr>
+					
+					<tr>
+						<th>11</th>
+						<th>slice</th>
+						<td>array.slice(start,end)</td>
+						<td>2,4</td>
+						<td>var a=["six",4,3,"two",1];</td>
+						<td>console.log(a.slice(2,4));</td>
+						<td>[3,"two"]</td>
+						<td>It gives the value from array by given start, end value</td>
+					</tr>
+					
+					<tr>
+						<th>12</th>
+						<th>toString</th>
+						<td>array.toString()</td>
+						<td>nil</td>
+						<td>var a=["six",4,3,"two",1];</td>
+						<td>console.log(a.toString());</td>
+						<td>"six,4,3,two,1"</td>
+						<td>It change all the values in the array to string.</td>
+					</tr>
+					
+					<tr>
+						<th>13</th>
+						<th>shift</th>
+						<td>array.shift()</td>
+						<td>nil</td>
+						<td>var a=["six",4,3,"two",1];</td>
+						<td>console.log(a.shift());</td>
+						<td>[3,"two",1]</td>
+						<td>It remove the first value of array.</td>
+					</tr>
+					
+					<tr>
+						<th>14</th>
+						<th>unshift</th>
+						<td>array.unshift(element)</td>
+						<td>5</td>
+						<td>var a=[4,3,"two",1];</td>
+						<td>console.log(a.unshift("five"));</td>
+						<td>["five",4,3,2,1]</td>
+						<td>It add the value in the begining of array.</td>
+					</tr>
+					
+					<tr>
+						<th>15</th>
+						<th>indexOf</th>
+						<td>indexOf(searchString)</td>
+						<td>"d"</td>
+						<td>var a="India"</td>
+						<td>console.log(a.indexOf("d"));</td>
+						<td>2</td>
+						<td>It gives index of the given parameter in the input string.</td>
+					</tr>
+				</table>
+			</div><br><br><br>
+			
+			
+			
+			
+			
+		</section>
+	</body>
+</html>
